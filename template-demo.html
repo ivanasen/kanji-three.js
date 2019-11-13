@@ -1,0 +1,58 @@
+﻿<!--
+    Това е демо-шаблон на първото домашно задание по ОКГ.
+    Вижте коментарите във файла, за да разберете къде да променяте.
+    
+    Разделяне/слепване на двете части на йероглифа:
+        клик с ляв бутон или клавиш "интервал"
+        
+    Показване/скриване на рамката:
+        клик с десен бутон или някой друг клавиш
+-->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>ф.н. 81837 &ndash; група 4 &ndash; Иван-Асен Чакъров</h1>
+
+    <script src="three.min.js"></script>
+    <script src="kanji.js"></script>
+    <script src="backgroundImage.js"></script>
+
+    <script>
+      const material = new THREE.MeshPhongMaterial({
+        color: "grey",
+        opacity: 0.95,
+        transparent: true
+      });
+
+      function createUpperPart() {
+        // let cube1 = new THREE.Mesh(new THREE.BoxGeometry(10, 10, 6), material);
+        // cube1.position.set(2.5, 5, 0);
+        // let cube2 = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 6), material);
+        // cube2.position.set(-5, 7.5, 0);
+        // let cube3 = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 6), material);
+        // cube3.position.set(5, -2.5, 0);
+
+        const cube1 = new THREE.Mesh(
+          new THREE.BoxGeometry(11, 1.1, 6),
+          material
+        );
+        cube1.position.set(2.3, 4.5, 0);
+
+        upperPart.add(cube1);
+      }
+
+      function createLowerPart() {
+        // cube1 = new THREE.Mesh(new THREE.BoxGeometry(10, 10, 6), material);
+        // cube1.position.set(-2.5, -5, 0);
+        // cube2 = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 6), material);
+        // cube2.position.set(5, -7.5, 0);
+        // cube3 = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 6), material);
+        // cube3.position.set(-5, 2.5, 0);
+        // lowerPart.add(cube1, cube2, cube3);
+      }
+
+      createUpperPart();
+      createLowerPart();
+    </script>
+  </body>
+</html>

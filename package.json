@@ -1,0 +1,25 @@
+{
+  "name": "kanji-three",
+  "version": "1.0.0",
+  "description": "Visualization of the Japanese kanji for the word \"destroy\" using Three.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanasen/kanji-three.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanasen/kanji-three.js/issues"
+  },
+  "homepage": "https://github.com/ivanasen/kanji-three.js#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "serve": "^11.2.0"
+  }
+}
